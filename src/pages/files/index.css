@@ -1,0 +1,9 @@
+
+.normal {
+  background: #F2AC79;
+}
+.leftWidth{
+  width:300px;
+  height: 100%;
+  background-color: #ddd;
+}
