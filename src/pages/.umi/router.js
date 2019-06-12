@@ -17,8 +17,18 @@ let routes = [
     "component": require('../../layouts').default,
     "routes": [
       {
+        "path": "/",
+        "component": require('../files/index').default,
+        "exact": true
+      },
+      {
         "path": "/files",
         "component": require('../files/index').default,
+        "exact": true
+      },
+      {
+        "path": "/count",
+        "component": require('../count/index').default,
         "exact": true
       },
       {

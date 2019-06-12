@@ -14,5 +14,5 @@ app.use(createLoading());
   app.use(plugin);
 });
 
-app.model({ namespace: 'cart', ...(require('/Users/chenshaoxin/Documents/quan/笔记/13课 项目实践2（2019.2.23）/umi-test/src/models/cart.js').default) });
-app.model({ namespace: 'user', ...(require('/Users/chenshaoxin/Documents/quan/笔记/13课 项目实践2（2019.2.23）/umi-test/src/models/user.js').default) });
+app.model({ namespace: 'cart', ...(require('/Users/chenshaoxin/Documents/umi/umifiledown/src/models/cart.js').default) });
+app.model({ namespace: 'user', ...(require('/Users/chenshaoxin/Documents/umi/umifiledown/src/models/user.js').default) });

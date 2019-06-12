@@ -23,6 +23,7 @@ export default class extends Component {
           className={styles.logo}
           src="https://img.kaikeba.com/logo-new.png"
         /> */}
+        <div className={styles.title}>登录</div>
         {/* 登录表单 */}
         <Login onSubmit={this.onSubmit}>
           <UserName
@@ -37,6 +38,7 @@ export default class extends Component {
           />
           <Submit>登录</Submit>
         </Login>
+        <div className={styles.fromMake}>By人工智能实验室</div>
       </div>
     );
   }

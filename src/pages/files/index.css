@@ -1,9 +1,88 @@
-
 .normal {
-  background: #F2AC79;
+    background: #F2AC79;
 }
-.leftWidth{
-  width:300px;
-  height: 100%;
-  background-color: #ddd;
+
+.leftWidth {
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    color: #736f6f;
+}
+
+.active {
+    background-color: #1890ff;
+    color: #fff;
+}
+
+.fileDiv {
+    cursor: pointer;
+    padding: 5px 30px;
+}
+
+.fixClass {
+    position: fixed;
+    top: 64px;
+    bottom: 0;
+    overflow: scroll;
+}
+
+.fixClassRight {
+    position: fixed;
+    top: 64px;
+    bottom: 0;
+    overflow: scroll;
+}
+
+.scrollBox {
+    overflow: scroll;
+}
+
+.fixClass:first-child {
+    left: 0;
+}
+
+.fixClass:last-child {
+    right: 0;
+    margin-top: 40px;
+}
+
+.search {
+    position: fixed;
+    width: 100%;
+    top: 70px;
+    left: 160px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.ico:hover {
+    color:"#ddd";
+    
+}
+.iconActive{
+  color: blue;
+}
+.searchTypeName{
+  cursor: pointer;
+  margin-left: 40px;
+}
+.sizeUp,.sizeDown,.nameUp{
+  position: absolute;
+  top: 4px;
+}
+.nameUp{
+  top: 8px;
+}
+.sizeDown{
+  top:14px;
+}
+.searchTypeBox{
+  padding: 4px;
+  margin-right: 40px;
+  float:right;
+}
+.fileBox{
+  border: 1px solid #ddd;
 }

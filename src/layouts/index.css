@@ -5,9 +5,9 @@
   margin: 16px;
 }
 .box {
-  padding: 24px;
+  /* padding: 24px; */
   background: #fff;
-  min-height: 500px;
+  margin-top: 64px;
 }
 .footer {
   text-align: center;

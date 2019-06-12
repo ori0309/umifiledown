@@ -9,54 +9,14 @@ import React, { Component } from "react";
 
 const { Header, Footer, Content } = Layout;
 const TranCss = styled.div`
-  .fade-appear,
   .fade-enter {
     opacity: 0;
+    z-index: 1;
   }
-  .fade-appear-active,
-  .fade-enter-active {
-    transition: opacity 0.3s linear;
+
+  .fade-enter.fade-enter-active {
     opacity: 1;
-  }
-
-  .fade-exit {
-    transition: opacity 0.2s linear;
-    opacity: 1;
-  }
-
-  .fade-exit-active {
-    opacity: 0;
-  }
-
-  .spread-appear,
-  .spread-enter {
-    opacity: 0.5;
-    transform: scale(0) rotate(30deg);
-  }
-
-  .spread-appear-active,
-  .spread-enter-active {
-    opacity: 1;
-    transform: scale(1) rotate(0);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .spread-exit {
-    transition: transform 0.2s ease-in-out;
-    transform: scale(1.2) rotate(-30deg);
-  }
-
-  .spread-exit-active {
-    transform: scale(0) rotate(0);
-  }
-
-  .page-content {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
+    transition: opacity 250ms ease-in;
   }
 `;
 
@@ -89,7 +49,10 @@ export default class extends Component {
       // 上中下布局
       <Layout>
         {/* 页头 */}
-        <Header className={styles.header}>
+        <Header
+          className={styles.header}
+          style={{ position: "fixed", width: "100%" }}
+        >
           <img
             className={styles.logo}
             // src="https://img.kaikeba.com/logo-new.png"
@@ -103,11 +66,12 @@ export default class extends Component {
             {/* <Menu.Item key="/">
               <Link to="/">商品</Link>
             </Menu.Item> */}
+
             <Menu.Item key="/">
-              <Link to="/">用户</Link>
+              <Link to="/">文件</Link>
             </Menu.Item>
-            <Menu.Item key="/files">
-              <Link to="/files">文件</Link>
+            <Menu.Item key="/count">
+              <Link to="/count">统计</Link>
             </Menu.Item>
             <Menu.Item key="/about">
               <Link to="/about">关于</Link>
@@ -127,7 +91,7 @@ export default class extends Component {
         </Header>
         {/* 内容 */}
         <Content className={styles.box}>
-          <TranCss>
+          {/* <TranCss>
             <TransitionGroup>
               <CSSTransition
                 key={this.props.location.pathname}
@@ -137,12 +101,11 @@ export default class extends Component {
                 <div className={styles.box}>{this.props.children}</div>
               </CSSTransition>
             </TransitionGroup>
-          </TranCss>
-
-          {/* <div className={styles.box}>{this.props.children}</div> */}
+          </TranCss> */}
+          <div>{this.props.children}</div>
         </Content>
         {/* 页脚 */}
-        <Footer className={styles.footer}>页脚</Footer>
+        {/* <Footer className={styles.footer}>页脚</Footer> */}
       </Layout>
     );
   }

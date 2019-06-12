@@ -22,8 +22,9 @@ export default {
       component: "../layouts",
       routes: [
         // { path: "/", component: "./index" },
-        // { path: "/", component: "./goods/index" },
+        { path: "/", component: "./files/index" },
         { path: "/files", component: "./files/index" },
+        { path: "/count", component: "./count/index" },
         {
           path: "/about",
           component: "./about",
