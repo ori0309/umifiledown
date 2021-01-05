@@ -12,7 +12,7 @@
   "dependencies": {
     "ant-design-pro": "^2.2.1",
     "antd": "^3.13.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bizcharts": "^3.5.4-beta.0",
     "react-transition-group": "^4.1.0",
     "styled-components": "^4.2.1",
